@@ -26,10 +26,20 @@ ON CLIENT (Ubuntu/Debian)
 
 sudo apt update
 sudo apt install ncpa -y
+
+***if Above command is not working try this***
+# 1. Download the latest NCPA package
+wget https://assets.nagios.com/downloads/ncpa3/ncpa-latest-1.amd64.deb
+# 2. Install the package
+sudo dpkg -i ncpa-latest-1.amd64.deb
+# 3. Fix any missing dependencies if prompted
+sudo apt-get install -f
+
 sudo systemctl enable --now ncpa
 sudo systemctl status ncpa
 sudo ufw allow 5693/tcp
 sudo vim /usr/local/ncpa/etc/ncpa.cfg
+
 
 # Find and change:
 community_string = redhat
