@@ -19,8 +19,8 @@ python3 -m http.server --bind 80 ........the .exe file will be  hosted
 
 Now go to Windows machine:
 ---------------------------
-Check the defender protection is off:
-now go to the browser on windows
+Check the microsoft defender protection is off:
+now go to the browser on windows:
 type  X.X.X.X: ...........kali machine IP..........access the .exe file and download it and run it
 Now you will get the meterpreter connection on your kali machine
 
@@ -47,7 +47,7 @@ python3 -m http.server --bind 80 ........the payload file will be hosted
 
 Now go to Ubuntu(debian) machine:
 ---------------------------
-now go to the browser
+now go to the browser:
 type  X.X.X.X: ...........kali machine IP..........access the file and download it and run it
 Now you will get the meterpreter connection on your kali machine
 
